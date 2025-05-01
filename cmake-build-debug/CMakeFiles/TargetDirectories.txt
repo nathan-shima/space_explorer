@@ -1,0 +1,3 @@
+C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/cmake-build-debug/CMakeFiles/space_explorer.dir
+C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
