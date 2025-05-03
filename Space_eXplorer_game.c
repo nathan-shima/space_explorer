@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "structures.h"
+#include "sprites.h"
 
 
 

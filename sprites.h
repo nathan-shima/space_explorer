@@ -30,6 +30,7 @@ typedef struct {
   position pos;
   int move_x;
   int move_y;
+  int hit; // 1 if not hit by asteroid or junk
 } asteroid;
 
 //created structure for junk
@@ -41,7 +42,7 @@ typedef struct {
 // make structure for individual cells on the game board
 typedef struct {
   char entity;
-  int empty; // 1 for
+  int empty; // 0 for empty 1 for full
 } space;
 
 typedef struct {
