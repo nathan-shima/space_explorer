@@ -9,7 +9,7 @@
 int minmax(int value, int min, int max);
 
 //set the difficulty
-int difficulty_tweak(int difficulty);
+int difficulty_tweak(void);
 
 // this function starts the game
 void initialise_game(game_board *board, ship *player, asteroid *ast, junk junklist[],int astcount, int junkcount, int difficulty);
