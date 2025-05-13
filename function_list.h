@@ -17,4 +17,6 @@ void initialise_game(game_board *board, ship *player, asteroid ast[], junk junkl
 // this function displays the game board
 void display_board(game_board *board);
 
+// this function will move the ship
+
 #endif

@@ -1,14 +1,15 @@
 //
 function name: initialise game
-input: N/A
+input: n/a
 output: game board and sprites
 description: displays the start of the game with all the sprites
 //
 //
-function name:
-input:
-output:
-description:
+function name: minmax
+input: any integer, maximum input, minimum input
+output: the original number, the minimum value or the maximum value
+description: takes original value and if it is less than the minimum the output os the minimum.
+if the value is larger than the maximum then the value becomes the maximum
 //
 //
 function name:
