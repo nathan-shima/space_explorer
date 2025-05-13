@@ -15,7 +15,7 @@ int main() {
     int difficulty = difficulty_tweak(); // Ask player for difficulty
 
     // Correct usage: Pass addresses, not types
-    initialise_game(&board, &player, asteroids, junkList, asteroidCount, junkCount, difficulty);
+    initialise_game(&board, &player, asteroids, junkList, &asteroidCount, &junkCount, difficulty);
 
     // You can now add your game loop or additional logic here
 

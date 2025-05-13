@@ -3,4 +3,7 @@ project(space_explorer C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(space_explorer Space_eXplorer_game.c)
+add_executable(space_explorer
+        Space_eXplorer_game.c
+        function_definition.c
+)

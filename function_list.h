@@ -1,5 +1,5 @@
-#ifndef functions_H //sets the name of the library so i can call it in the main game file later
-#define functions_H
+#ifndef function_list_H //sets the name of the library so i can call it in the main game file later
+#define function_list_H
 #include "sprites.h"
 
 // all functions are in order of when they appear
@@ -12,7 +12,7 @@ int minmax(int value, int min, int max);
 int difficulty_tweak(void);
 
 // this function starts the game
-void initialise_game(game_board *board, ship *player, asteroid *ast, junk junklist[],int astcount, int junkcount, int difficulty);
+void initialise_game(game_board *board, ship *player, asteroid ast[], junk junklist[], int *astcount, int *junkcount, int difficulty);
 
 // this function displays the game board
 void display_board(game_board *board);

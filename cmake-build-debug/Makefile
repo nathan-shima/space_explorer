@@ -152,6 +152,30 @@ Space_eXplorer_game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/Space_eXplorer_game.c.s
 .PHONY : Space_eXplorer_game.c.s
 
+function_definition.obj: function_definition.c.obj
+.PHONY : function_definition.obj
+
+# target to build an object file
+function_definition.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/function_definition.c.obj
+.PHONY : function_definition.c.obj
+
+function_definition.i: function_definition.c.i
+.PHONY : function_definition.i
+
+# target to preprocess a source file
+function_definition.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/function_definition.c.i
+.PHONY : function_definition.c.i
+
+function_definition.s: function_definition.c.s
+.PHONY : function_definition.s
+
+# target to generate assembly for a file
+function_definition.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/function_definition.c.s
+.PHONY : function_definition.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... Space_eXplorer_game.obj
 	@echo ... Space_eXplorer_game.i
 	@echo ... Space_eXplorer_game.s
+	@echo ... function_definition.obj
+	@echo ... function_definition.i
+	@echo ... function_definition.s
 .PHONY : help
 
 
