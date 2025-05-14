@@ -114,13 +114,25 @@ void player_move(game_board *board, ship *player, junk junklist[], int junkcount
 
     switch (direction) {
         case 'w':
-        case 'W': dy = -1; break;
+        case 'W':
+        dy = -1;
+        break;
+
         case 's':
-        case 'S': dy = 1; break;
+        case 'S':
+        dy = 1;
+        break;
+
         case 'a':
-        case 'A': dx = -1; break;
+        case 'A':
+        dx = -1;
+        break;
+
         case 'd':
-        case 'D': dx = 1; break;
+        case 'D':
+        dx = 1;
+        break;
+
         default:
             printf("invalid direction\n");
         return;
