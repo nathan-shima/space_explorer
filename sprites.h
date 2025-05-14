@@ -7,7 +7,7 @@
 // sprites to be placed on the game board
 #define ship_sprite 'S'
 #define junk_sprite 'J'
-#define asteroid_sprite 'A'
+#define ast_sprite 'A'
 #define empty_sprite ' '
 
 // structures made below
@@ -25,17 +25,19 @@ typedef struct {
   int junk_collected;
 } ship;
 
-// create structure for asteroid
+// create structure for ast
 typedef struct {
   position pos;
   int move_x;
   int move_y;
-  int hit; // 1 if not hit by asteroid or junk
-} asteroid;
+  int hit; // 1 if not hit by ast or junk
+} ast;
 
 //created structure for junk
 typedef struct {
   position pos;
+  int move_x;
+  int move_y;
   int present; // 1 if not collected 0 if it is collected
 } junk;
 

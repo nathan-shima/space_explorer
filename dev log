@@ -5,3 +5,7 @@ v0.004 - first test of code
 v0.005 - added player movement
 v0.006 - added health counter
 v0.007 - added fuel counter
+v0.008 - added game end conditions
+v0.009 - added game end screen
+v0.010 - bug fix dissapearing junk
+v0.011 - bug fix dissapearing ship
