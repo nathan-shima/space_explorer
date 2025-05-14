@@ -132,13 +132,12 @@ void player_move(game_board *board, ship *player, junk junklist[], int junkcount
 
     char target = board->grid[new_y][new_x].entity;
 
-    // Handle collisions
+    // asteroid and junk collisions
     if (target == junk_sprite) {
-        printf("Collected junk!\n");
+        printf("junk collected\n");
         player->junk_collected++;
-
+        player->fuel += 10;
         // Mark junk as not present
-        // You'll need to remove it from the list:
         for (int i = 0; i < junkcount; i++) {
             if (junklist[i].present &&
                 junklist[i].pos.x == new_x &&
@@ -149,7 +148,7 @@ void player_move(game_board *board, ship *player, junk junklist[], int junkcount
         }
     }
     else if (target == ast_sprite) {
-        printf("Hit an ast!\n");
+        printf("hit an asteroid\n");
         player->health--;
 
         // Remove ast
@@ -274,46 +273,3 @@ void take_turn(game_board *board, ship *player, ast asts[], int astcount, junk j
     junk_move(board, junklist, junkcount, level, difficulty, asts, astcount);
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------
-void end_game(int level, int difficulty, int score) {
-    ship player;
-    if (level > 5) {
-            printf("\n");
-            printf("=====================================\n");
-            printf("         GAME OVER YOU WIN\n");
-            printf("=====================================\n");
-            printf("Final Score:         %d\n", score);
-            printf("Junk Collected:      %d\n", player.junk_collected);
-            printf("Difficulty Level:    %d\n", difficulty);
-            printf("=====================================\n");
-            printf("  Thanks for playing Space Explorer! \n");
-            printf("=====================================\n\n");
-        }
-        if (player.fuel <= 0) {
-            printf("\n");
-            printf("=====================================\n");
-            printf("         GAME OVER YOU LOOSE\n");
-            printf("=====================================\n");
-            printf("         YOU RAN OUT OF FUEL\n");
-            printf("=====================================\n");
-            printf("Final Score:         %d\n", score);
-            printf("Junk Collected:      %d\n", player.junk_collected);
-            printf("Difficulty Level:    %d\n", difficulty);
-            printf("=====================================\n");
-            printf("  Thanks for playing Space Explorer! \n");
-            printf("=====================================\n\n");
-        }
-        if (player.health <= 0) {
-            printf("\n");
-            printf("=====================================\n");
-            printf("         GAME OVER YOU LOOSE\n");
-            printf("=====================================\n");
-            printf("       YOU TOOK TOO MUCH DAMAGE\n");
-            printf("=====================================\n");
-            printf("Final Score:         %d\n", score);
-            printf("Junk Collected:      %d\n", player.junk_collected);
-            printf("Difficulty Level:    %d\n", difficulty);
-            printf("=====================================\n");
-            printf("  Thanks for playing Space Explorer! \n");
-            printf("=====================================\n\n");
-        }
-}

@@ -26,7 +26,4 @@ void junk_move(game_board *board, junk junklist[], int junkcount, int level, int
 //this function adds all movement into a single function to streamline main
 void take_turn(game_board *board, ship *player, ast asts[], int astcount, junk junklist[], int junkcount, int level, int difficulty);
 
-// print end screen depending on conditions met
-void end_game(int level, int difficulty, int score);
-
 #endif
