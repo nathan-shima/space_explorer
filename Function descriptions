@@ -8,23 +8,53 @@ description: displays the start of the game with all the sprites
 function name:difficulty tweak
 input: number between 1 and 3
 output: n/a
-description:
+description: user enters the difficulty desired for their gameplay
 //
 //
-function name:
-input:
-output:
-description:
+function name: display board
+input: N/A
+output: the visualisation of all the game pieces
+description: takes all the sptrites generated in the initialise game function then outputs it in the shell
 //
 //
-function name:
-input:
-output:
-description:
+function name: player move
+input: w, a, s or d
+output: ship sprite in new position
+description: by entering one of the directional keys the user can move the ship along the board
 //
 //
-function name:
-input:
-output:
-description:
+function name: ast move
+input: N/A
+output: atsroid in new location
+description: astroid moves in a regular direction, with a chance of changing directions that scales with difficulty
+//
+//
+function name: junk move
+input: N/A
+output: junk in new location
+description: astroid moves in a regular direction, with a chance of changing directions that scales with difficulty
+//
+//
+function name:take turn
+input:N/A
+output:N/A
+description:function that combines the movement functions in order to streamline main
+//
+//
+function name: sort scores
+input: N/A
+output: N/A
+description: sort the leaderboard in decending order using the score
+//
+//
+function name: save score
+input: users name
+output: N/A
+description: takes name and adds it to the leaderboard.txt file
+//
+//
+function name: display leaderboard
+input: N/A
+output: top ten positions on the leaderboard
+description: reads the leaderboard.txt file and outputs the top 10 positions
 //
