@@ -1,5 +1,7 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include "function_list.h"
 
@@ -285,3 +287,72 @@ void take_turn(game_board *board, ship *player, ast asts[], int astcount, junk j
     junk_move(board, junklist, junkcount, level, difficulty, asts, astcount);
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------
+int sort_scores(const void *a, const void *b) {
+    leaderboard *entry1 = (leaderboard *)a;
+    leaderboard *entry2 = (leaderboard *)b;
+    return entry2->score - entry1->score;
+}
+//--------------------------------------------------------------------------------------------------------------------------------------------
+void save_score(const char *name, int score, int difficulty) {
+    leaderboard *entries[max_no];
+    int index = 0;
+
+    //read any scores already stored
+    FILE *file = fopen("leaderboard", "r"); //reads file
+    if (file) {
+        char line[100];
+        while (fgets(line,sizeof(line), file)) {
+            if (isdigit(line[0])) { // find start of leaderboard
+                int rank;
+                int score;
+                int difficulty;
+                char name[name_len];
+                if (sscanf(line, "%d | %s %*[^|]| %d | %d",&rank, name, &score, &difficulty) == 4) {
+                    // format leaderboard table
+                    strncpy(entries[index]->name, name, name_len);
+                    entries[index]->score = score;
+                    entries[index]->difficulty = difficulty;
+                    index++;
+                }
+            }
+        }
+        fclose(file);
+    }
+    strncpy(entries[index]->name, name, name_len);
+    entries[index]->score = score;
+    entries[index]->difficulty = difficulty;
+    index++;
+    qsort(entries, index, sizeof(leaderboard *), sort_scores);
+    //write to the txt file
+    file = fopen("leaderboard", "w");
+    if (!file) {
+        printf("Could not open file leaderboard.txt\n");
+        return;
+    }
+    fprintf(file, "=========== LEADERBOARD ===========\n");
+    fprintf(file, "  RANK | NAME       | SCORE | DIFFICULTY\n");
+    fprintf(file, "---------------------------------------\n");
+    for (int i = 0; i < index; i++) {
+        fprintf(file, " %4d | %-10s | %5d |     %d\n",i + 1, entries[i]->name, entries[i]->score, entries[i]->difficulty);
+    }
+    fprintf(file, "==============================\n");
+    fclose(file);
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------
+void display_leaderboard() {
+    FILE *file = fopen("leaderboard", "r");
+    if (file == NULL) {
+        printf("Could not open file leaderboard.txt\n");
+        return;
+    }
+    char line[100];
+    int index = 0;
+    while (fgets(line,sizeof(line), file) && index < 16) {
+        if (line[0] == '\n') {
+            continue;
+        }
+        printf("%s", line);
+        index++;
+    }
+    fclose(file);
+}

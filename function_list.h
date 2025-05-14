@@ -26,4 +26,13 @@ void junk_move(game_board *board, junk junklist[], int junkcount, int level, int
 //this function adds all movement into a single function to streamline main
 void take_turn(game_board *board, ship *player, ast asts[], int astcount, junk junklist[], int junkcount, int level, int difficulty);
 
+// this function sorts the leaderboard scores in both the txt file and the output in game
+int sort_scores(const void *a, const void *b);
+
+// writes score into the txt file
+void save_score(const char *name, int score, int difficulty);
+
+// displays the leaderboard to the player
+void display_leaderboard();
+
 #endif

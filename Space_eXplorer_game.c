@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include "sprites.h"
 #include "function_list.h"
@@ -42,6 +43,13 @@ int main() {
             printf("=====================================\n");
             printf("  Thanks for playing Space Explorer! \n");
             printf("=====================================\n\n");
+            char name[name_len];
+            printf("Enter your name: ");
+            // Clear the input buffer before using fgets
+            fflush(stdin);  // Clears any remaining characters in the buffer
+            fgets(name, name_len, stdin);  // Read the name input
+            name[strcspn(name, "\n")] = '\0';  // Remove the newline character if present
+
         }
         if (player.fuel <= 0) {
             printf("\n");
@@ -50,13 +58,21 @@ int main() {
             printf("=====================================\n");
             printf("         YOU RAN OUT OF FUEL\n");
             printf("=====================================\n");
-            printf("Final Score:         %d\n", score);
-            printf("Junk Collected:      %d\n", player.junk_collected);
-            printf("Difficulty Level:    %d\n", difficulty);
+            printf("final Score:         %d\n", score);
+            printf("junk Collected:      %d\n", player.junk_collected);
+            printf("difficulty Level:    %d\n", difficulty);
             printf("=====================================\n");
             printf("  Thanks for playing Space Explorer! \n");
             printf("=====================================\n\n");
+            char name[name_len];
+            printf("Enter your name: ");
+            // Clear the input buffer before using fgets
+            fflush(stdin);  // Clears any remaining characters in the buffer
+            fgets(name, name_len, stdin);  // Read the name input
+            name[strcspn(name, "\n")] = '\0';  // Remove the newline character if present
         }
+
+
         if (player.health <= 0) {
             printf("\n");
             printf("=====================================\n");
@@ -70,10 +86,14 @@ int main() {
             printf("=====================================\n");
             printf("  Thanks for playing Space Explorer! \n");
             printf("=====================================\n\n");
-        }
-    }
-
-
+            char name[name_len];
+            printf("Enter your name: ");
+            // Clear the input buffer before using fgets
+            fflush(stdin);  // Clears any remaining characters in the buffer
+            fgets(name, name_len, stdin);  // Read the name input
+            name[strcspn(name, "\n")] = '\0';  // Remove the newline character if present
+                }
+            }
 
 
 

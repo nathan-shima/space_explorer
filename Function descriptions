@@ -5,9 +5,9 @@ output: game board and sprites
 description: displays the start of the game with all the sprites
 //
 //
-function name:
-input:
-output:
+function name:difficulty tweak
+input: number between 1 and 3
+output: n/a
 description:
 //
 //

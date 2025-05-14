@@ -9,3 +9,6 @@ v0.008 - added game end conditions
 v0.009 - added game end screen
 v0.010 - bug fix dissapearing junk
 v0.011 - bug fix dissapearing ship
+v0.012 - added leaderboard struct
+v0.013 - txt file to store leaderboard
+v0.013 - read and print top 10 in game

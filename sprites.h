@@ -4,6 +4,9 @@
 // define the game board
 #define board_size 18
 
+#define max_no 1000
+#define name_len 10
+
 // sprites to be placed on the game board
 #define ship_sprite 'S'
 #define junk_sprite 'J'
@@ -51,6 +54,10 @@ typedef struct {
   space grid[board_size][board_size];
 } game_board;
 
-
+typedef struct {
+  char name[name_len];
+  int score;
+  int difficulty;
+} leaderboard;
 
 #endif
