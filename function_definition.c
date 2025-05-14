@@ -294,55 +294,60 @@ int sort_scores(const void *a, const void *b) {
 }
 //--------------------------------------------------------------------------------------------------------------------------------------------
 void save_score(const char *name, int score, int difficulty) {
-    leaderboard *entries[max_no];
+    leaderboard entries[max_no];
     int index = 0;
 
-    //read any scores already stored
-    FILE *file = fopen("leaderboard", "r"); //reads file
+    // Read any scores already stored
+    FILE *file = fopen("\\C:\\Users\\Natha\\OneDrive - UWE Bristol\\year 1\\sem 2\\programming\\space explorer\\leaderboard.txt", "r");  // Open file in read mode
     if (file) {
         char line[100];
-        while (fgets(line,sizeof(line), file)) {
-            if (isdigit(line[0])) { // find start of leaderboard
-                int rank;
-                int score;
-                int difficulty;
+        while (fgets(line, sizeof(line), file)) {
+            if (isdigit(line[0])) {  // Find the start of the leaderboard
+                int rank, score, difficulty;
                 char name[name_len];
-                if (sscanf(line, "%d | %s %*[^|]| %d | %d",&rank, name, &score, &difficulty) == 4) {
-                    // format leaderboard table
-                    strncpy(entries[index]->name, name, name_len);
-                    entries[index]->score = score;
-                    entries[index]->difficulty = difficulty;
+                if (sscanf(line, "%d | %s %*[^|]| %d | %d", &rank, name, &score, &difficulty) == 4) {
+                    // Format leaderboard table
+                    strncpy(entries[index].name, name, name_len);
+                    entries[index].score = score;
+                    entries[index].difficulty = difficulty;
                     index++;
                 }
             }
         }
         fclose(file);
     }
-    strncpy(entries[index]->name, name, name_len);
-    entries[index]->score = score;
-    entries[index]->difficulty = difficulty;
+
+    // Add the current score to the leaderboard
+    strncpy(entries[index].name, name, name_len);
+    entries[index].score = score;
+    entries[index].difficulty = difficulty;
     index++;
-    qsort(entries, index, sizeof(leaderboard *), sort_scores);
-    //write to the txt file
-    file = fopen("leaderboard", "w");
+
+    // Sort leaderboard by score in descending order
+    qsort(entries, index, sizeof(leaderboard), sort_scores);
+
+    // Write to the leaderboard file
+    file = fopen("\\C:\\Users\\Natha\\OneDrive - UWE Bristol\\year 1\\sem 2\\programming\\space explorer\\leaderboard.txt", "w");  // Open file in write mode
     if (!file) {
-        printf("Could not open file leaderboard.txt\n");
+        printf("Could not open file \\C:\\Users\\Natha\\OneDrive - UWE Bristol\\year 1\\sem 2\\programming\\space explorer\\leaderboard.txt\n");
         return;
     }
+
+    // Write the leaderboard to the file
     fprintf(file, "=========== LEADERBOARD ===========\n");
     fprintf(file, "  RANK | NAME       | SCORE | DIFFICULTY\n");
     fprintf(file, "---------------------------------------\n");
     for (int i = 0; i < index; i++) {
-        fprintf(file, " %4d | %-10s | %5d |     %d\n",i + 1, entries[i]->name, entries[i]->score, entries[i]->difficulty);
+        fprintf(file, " %4d | %-10s | %5d |     %d\n", i + 1, entries[i].name, entries[i].score, entries[i].difficulty);
     }
     fprintf(file, "==============================\n");
     fclose(file);
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------
 void display_leaderboard() {
-    FILE *file = fopen("leaderboard", "r");
+    FILE *file = fopen("\\C:\\Users\\Natha\\OneDrive - UWE Bristol\\year 1\\sem 2\\programming\\space explorer\\leaderboard.txt", "r");
     if (file == NULL) {
-        printf("Could not open file leaderboard.txt\n");
+        printf("Could not open file \\C:\\Users\\Natha\\OneDrive - UWE Bristol\\year 1\\sem 2\\programming\\space explorer\\leaderboard.txt\n");
         return;
     }
     char line[100];

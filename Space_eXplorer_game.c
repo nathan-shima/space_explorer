@@ -45,10 +45,9 @@ int main() {
             printf("=====================================\n\n");
             char name[name_len];
             printf("Enter your name: ");
-            // Clear the input buffer before using fgets
-            fflush(stdin);  // Clears any remaining characters in the buffer
-            fgets(name, name_len, stdin);  // Read the name input
-            name[strcspn(name, "\n")] = '\0';  // Remove the newline character if present
+            fflush(stdin);
+            fgets(name, name_len, stdin);
+            name[strcspn(name, "\n")] = '\0';
 
         }
         if (player.fuel <= 0) {
@@ -66,10 +65,9 @@ int main() {
             printf("=====================================\n\n");
             char name[name_len];
             printf("Enter your name: ");
-            // Clear the input buffer before using fgets
-            fflush(stdin);  // Clears any remaining characters in the buffer
-            fgets(name, name_len, stdin);  // Read the name input
-            name[strcspn(name, "\n")] = '\0';  // Remove the newline character if present
+            fflush(stdin);
+            fgets(name, name_len, stdin);
+            name[strcspn(name, "\n")] = '\0';
         }
 
 
@@ -88,10 +86,9 @@ int main() {
             printf("=====================================\n\n");
             char name[name_len];
             printf("Enter your name: ");
-            // Clear the input buffer before using fgets
-            fflush(stdin);  // Clears any remaining characters in the buffer
-            fgets(name, name_len, stdin);  // Read the name input
-            name[strcspn(name, "\n")] = '\0';  // Remove the newline character if present
+            fflush(stdin);
+            fgets(name, name_len, stdin);
+            name[strcspn(name, "\n")] = '\0';
                 }
             }
 
