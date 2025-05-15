@@ -96,21 +96,53 @@ CMakeFiles/space_explorer.dir/function_definition.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space_explorer.dir/function_definition.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\function_definition.c" -o CMakeFiles\space_explorer.dir\function_definition.c.s
 
+CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj: CMakeFiles/space_explorer.dir/flags.make
+CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj: C:/Users/Natha/OneDrive\ -\ UWE\ Bristol/year\ 1/sem\ 2/programming/space\ explorer/test/iso_unit_test_1.c
+CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj: CMakeFiles/space_explorer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj -MF CMakeFiles\space_explorer.dir\test\iso_unit_test_1.c.obj.d -o CMakeFiles\space_explorer.dir\test\iso_unit_test_1.c.obj -c "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\test\iso_unit_test_1.c"
+
+CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\test\iso_unit_test_1.c" > CMakeFiles\space_explorer.dir\test\iso_unit_test_1.c.i
+
+CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\test\iso_unit_test_1.c" -o CMakeFiles\space_explorer.dir\test\iso_unit_test_1.c.s
+
+CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj: CMakeFiles/space_explorer.dir/flags.make
+CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj: C:/Users/Natha/OneDrive\ -\ UWE\ Bristol/year\ 1/sem\ 2/programming/space\ explorer/test/iso_unit_test_2.c
+CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj: CMakeFiles/space_explorer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj -MF CMakeFiles\space_explorer.dir\test\iso_unit_test_2.c.obj.d -o CMakeFiles\space_explorer.dir\test\iso_unit_test_2.c.obj -c "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\test\iso_unit_test_2.c"
+
+CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\test\iso_unit_test_2.c" > CMakeFiles\space_explorer.dir\test\iso_unit_test_2.c.i
+
+CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\test\iso_unit_test_2.c" -o CMakeFiles\space_explorer.dir\test\iso_unit_test_2.c.s
+
 # Object files for target space_explorer
 space_explorer_OBJECTS = \
 "CMakeFiles/space_explorer.dir/Space_eXplorer_game.c.obj" \
-"CMakeFiles/space_explorer.dir/function_definition.c.obj"
+"CMakeFiles/space_explorer.dir/function_definition.c.obj" \
+"CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj" \
+"CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj"
 
 # External object files for target space_explorer
 space_explorer_EXTERNAL_OBJECTS =
 
 space_explorer.exe: CMakeFiles/space_explorer.dir/Space_eXplorer_game.c.obj
 space_explorer.exe: CMakeFiles/space_explorer.dir/function_definition.c.obj
+space_explorer.exe: CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj
+space_explorer.exe: CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj
 space_explorer.exe: CMakeFiles/space_explorer.dir/build.make
 space_explorer.exe: CMakeFiles/space_explorer.dir/linkLibs.rsp
 space_explorer.exe: CMakeFiles/space_explorer.dir/objects1.rsp
 space_explorer.exe: CMakeFiles/space_explorer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable space_explorer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Natha\OneDrive - UWE Bristol\year 1\sem 2\programming\space explorer\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable space_explorer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\space_explorer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

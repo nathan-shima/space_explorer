@@ -1,14 +1,14 @@
-V0.001 - created structures library
-v0.002 - created functions library
-v0.003 - created functions definitions
-v0.004 - first test of code
-v0.005 - added player movement
-v0.006 - added health counter
-v0.007 - added fuel counter
-v0.008 - added game end conditions
-v0.009 - added game end screen
-v0.010 - bug fix dissapearing junk
-v0.011 - bug fix dissapearing ship
-v0.012 - added leaderboard struct
-v0.013 - txt file to store leaderboard
-v0.013 - read and print top 10 in game
+V0.01 - created structures library
+v0.02 - created functions library
+v0.03 - created functions definitions
+v0.04 - first test of code
+v0.05 - added player movement
+v0.06 - added health counter
+v0.07 - added fuel counter
+v0.08 - added game end conditions
+v0.09 - added game end screen
+v0.10 - bug fix dissapearing junk
+v0.11 - bug fix dissapearing ship
+v0.12 - added leaderboard struct
+v0.13 - txt file to store leaderboard
+v0.14 - read and print top 10 in game

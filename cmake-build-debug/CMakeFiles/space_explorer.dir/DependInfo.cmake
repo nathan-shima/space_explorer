@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/Space_eXplorer_game.c" "CMakeFiles/space_explorer.dir/Space_eXplorer_game.c.obj" "gcc" "CMakeFiles/space_explorer.dir/Space_eXplorer_game.c.obj.d"
   "C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/function_definition.c" "CMakeFiles/space_explorer.dir/function_definition.c.obj" "gcc" "CMakeFiles/space_explorer.dir/function_definition.c.obj.d"
+  "C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/test/iso_unit_test_1.c" "CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj" "gcc" "CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj.d"
+  "C:/Users/Natha/OneDrive - UWE Bristol/year 1/sem 2/programming/space explorer/test/iso_unit_test_2.c" "CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj" "gcc" "CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

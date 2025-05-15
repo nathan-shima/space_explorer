@@ -176,6 +176,54 @@ function_definition.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/function_definition.c.s
 .PHONY : function_definition.c.s
 
+test/iso_unit_test_1.obj: test/iso_unit_test_1.c.obj
+.PHONY : test/iso_unit_test_1.obj
+
+# target to build an object file
+test/iso_unit_test_1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.obj
+.PHONY : test/iso_unit_test_1.c.obj
+
+test/iso_unit_test_1.i: test/iso_unit_test_1.c.i
+.PHONY : test/iso_unit_test_1.i
+
+# target to preprocess a source file
+test/iso_unit_test_1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.i
+.PHONY : test/iso_unit_test_1.c.i
+
+test/iso_unit_test_1.s: test/iso_unit_test_1.c.s
+.PHONY : test/iso_unit_test_1.s
+
+# target to generate assembly for a file
+test/iso_unit_test_1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/test/iso_unit_test_1.c.s
+.PHONY : test/iso_unit_test_1.c.s
+
+test/iso_unit_test_2.obj: test/iso_unit_test_2.c.obj
+.PHONY : test/iso_unit_test_2.obj
+
+# target to build an object file
+test/iso_unit_test_2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.obj
+.PHONY : test/iso_unit_test_2.c.obj
+
+test/iso_unit_test_2.i: test/iso_unit_test_2.c.i
+.PHONY : test/iso_unit_test_2.i
+
+# target to preprocess a source file
+test/iso_unit_test_2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.i
+.PHONY : test/iso_unit_test_2.c.i
+
+test/iso_unit_test_2.s: test/iso_unit_test_2.c.s
+.PHONY : test/iso_unit_test_2.s
+
+# target to generate assembly for a file
+test/iso_unit_test_2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_explorer.dir\build.make CMakeFiles/space_explorer.dir/test/iso_unit_test_2.c.s
+.PHONY : test/iso_unit_test_2.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +239,12 @@ help:
 	@echo ... function_definition.obj
 	@echo ... function_definition.i
 	@echo ... function_definition.s
+	@echo ... test/iso_unit_test_1.obj
+	@echo ... test/iso_unit_test_1.i
+	@echo ... test/iso_unit_test_1.s
+	@echo ... test/iso_unit_test_2.obj
+	@echo ... test/iso_unit_test_2.i
+	@echo ... test/iso_unit_test_2.s
 .PHONY : help
 
 
